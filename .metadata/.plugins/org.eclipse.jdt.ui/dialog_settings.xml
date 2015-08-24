@@ -3,8 +3,8 @@
 	<section name="DialogBounds_OverrideMethodDialog">
 		<item value="472" key="DIALOG_WIDTH"/>
 		<item value="203" key="DIALOG_Y_ORIGIN"/>
-		<item value="607" key="DIALOG_X_ORIGIN"/>
 		<item value="404" key="DIALOG_HEIGHT"/>
+		<item value="607" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
@@ -28,8 +28,8 @@
 		<item value="true" key="jarOptionsWizardPage.EXPORT_ERRORS"/>
 		<item value="true" key="JarPackageWizardPage.EXPORT_CLASS_FILES"/>
 		<item value="false" key="jarOptionsWizardPage.SAVE_DESCRIPTION"/>
-		<item value="true" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
+		<item value="true" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<item value="true" key="JarPackageWizardPage.COMPRESS"/>
 		<item value="true" key="jarOptionsWizardPage.BUILD_IF_NEEDED"/>
@@ -75,13 +75,13 @@
 		<section name="projects">
 			<section name="Core">
 				<item value="D:\Workspace\Training\Core\doc" key="destdir"/>
-				<item value="D:\Workspace\Training\Core\javadoc.xml" key="antpath"/>
 				<item value="" key="href"/>
+				<item value="D:\Workspace\Training\Core\javadoc.xml" key="antpath"/>
 			</section>
 			<section name="Demo1">
 				<item value="D:\Workspace\Training\Demo1\doc" key="destdir"/>
-				<item value="D:\Workspace\Training\Demo1\javadoc.xml" key="antpath"/>
 				<item value="" key="href"/>
+				<item value="D:\Workspace\Training\Demo1\javadoc.xml" key="antpath"/>
 			</section>
 		</section>
 	</section>
@@ -99,25 +99,25 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
-	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="false" key="renameSubpackages"/>
-		<item value="false" key="updateQualifiedNames"/>
-		<item value="*" key="patterns"/>
-		<item value="1" key="updateSimilarElementsMatchStrategy"/>
-		<item value="false" key="updateTextualMatches"/>
-		<item value="false" key="updateSimilarElements"/>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="false" key="create_unimplemented"/>
 	</section>
-	<section name="RenameInformationPopup">
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="false" key="renameSubpackages"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+		<item value="false" key="updateTextualMatches"/>
+		<item value="false" key="updateSimilarElements"/>
 	</section>
 	<section name="JavadocWizardDialog">
 		<item value="508" key="DIALOG_WIDTH"/>
 		<item value="64" key="DIALOG_Y_ORIGIN"/>
-		<item value="565" key="DIALOG_HEIGHT"/>
 		<item value="470" key="DIALOG_X_ORIGIN"/>
+		<item value="565" key="DIALOG_HEIGHT"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>
