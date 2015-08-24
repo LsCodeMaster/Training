@@ -1,0 +1,15 @@
+package polyPackage;
+
+public class MainApp {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HR hr = new HR();
+		Employee employee = hr.recruit("I");
+		if(employee!= null){
+			employee.netSalary();
+		}
+	}
+
+}

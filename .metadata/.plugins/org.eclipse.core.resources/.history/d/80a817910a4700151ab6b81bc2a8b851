@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package polyPackage;
+
+/**
+ * @author ilisze
+ *
+ */
+public class Employee {
+	String empType;
+	public Employee(String type){
+		this.empType = type;
+	}
+	public netSalary(){
+		System.out.printlm("Employees Salary");
+	}
+}

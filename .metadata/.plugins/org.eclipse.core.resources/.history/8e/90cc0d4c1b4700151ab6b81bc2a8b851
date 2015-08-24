@@ -1,0 +1,7 @@
+package polyAbsPackage;
+
+public class Finance {
+	public void processSalary(Employee e){
+		e.netSalary();
+	}
+}

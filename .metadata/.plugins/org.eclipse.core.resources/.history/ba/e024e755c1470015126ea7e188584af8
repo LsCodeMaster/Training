@@ -1,0 +1,27 @@
+package expackage;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//
+//		try {
+//			int sum = 0;
+//			for (String arg : args) {
+//				sum += Integer.parseInt(arg);
+//			}
+//			System.out.println("Sum = " + sum);
+//		} catch (NumberFormatException nfe) {
+//			System.err.println("One of the command-line "
+//					+ "arguments is not an integer.");
+//		}
+//		
+		try{
+			System.out.println(Integer.parseInt(args[0])/Integer.parseInt(args[1]));
+			System.out.println("End of Try Block");
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("java <MainClass> <name>");
+		}
+	}
+}

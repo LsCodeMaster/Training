@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package polyAbsPackage;
+
+/**
+ * @author ilisze
+ * 
+ */
+public class HR {
+	public Employee recruit(String empType) {
+		if (empType.equals("F")) {
+			return new FullTime();
+		} else if (empType.equals("I")) {
+			return new Intern();
+		} else
+			return null;
+	}
+}

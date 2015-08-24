@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package polyPackage;
+
+/**
+ * @author ilisze
+ *
+ */
+public class Employee {
+	String empType;
+	public Employee(String type){
+		this.empType = type;
+	}
+}

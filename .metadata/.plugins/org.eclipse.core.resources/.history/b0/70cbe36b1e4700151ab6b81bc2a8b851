@@ -1,0 +1,23 @@
+package polyAbsPackage;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HR hr = new HR();
+		Finance f = new Finance();
+		Employee employee1 = hr.recruit("I");
+		if (employee1 != null) {
+			f.processSalary(employee1);
+		}
+		Employee employee2 = hr.recruit("F");
+		if (employee2 != null) {
+			f.processSalary(employee2);
+		}
+		Employee employee3 = hr.recruit("C");
+		if (employee3 != null) {
+			f.processSalary(employee3);
+		}
+	}
+
+}

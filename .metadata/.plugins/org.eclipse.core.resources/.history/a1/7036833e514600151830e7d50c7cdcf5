@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package Science;
+
+import math.Arithmetic;
+
+/**
+ * @author ilisze
+ *
+ */
+public class Physics extends Arithmetic{
+	public double potentialEnergy(int height, int height){
+		double gravity = 9.81;
+		Arithmetic arith = new Arithmetic();
+		arith		
+	}
+}

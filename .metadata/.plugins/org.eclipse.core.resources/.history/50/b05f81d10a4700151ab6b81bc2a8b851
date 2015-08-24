@@ -1,0 +1,10 @@
+package polyPackage;
+
+public class Intern extends Employee{
+	public Intern(){
+		super("Intern");
+	}
+	public void NetSalary(){
+		System.out.println("Intern Employee's Salary");
+	}
+}

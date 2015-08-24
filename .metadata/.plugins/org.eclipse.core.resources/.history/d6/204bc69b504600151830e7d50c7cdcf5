@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package math;
+
+/**
+ * @author ilisze
+ * This class is for math operations
+ */
+public class Arithmetic {
+	int num1;
+	protected int num2;
+	public int num3;
+	private int num4;
+	/**
+	 * This method gives the sum of two numbers
+	 * @param num1 - number 1 to be added
+	 * @param num2 - number 2 to be added
+	 * @return sum of 3 numbers
+	 */
+	public int sum(int num1, int num2){
+		return num1 + num2;
+	}
+}

@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package enumEx;
+
+/**
+ * @author ilisze
+ *
+ */
+enum Apple {
+	Jonathan, GoldenDel, RedDel, Winesap, Cortland
+}
+
+public class Enum {
+
+}

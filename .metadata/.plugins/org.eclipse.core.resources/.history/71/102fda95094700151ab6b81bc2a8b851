@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package polyPackage;
+
+/**
+ * @author ilisze
+ *
+ */
+public class FullTime extends Employee{
+	public FullTime(){
+		super("FullTime");
+	}
+}

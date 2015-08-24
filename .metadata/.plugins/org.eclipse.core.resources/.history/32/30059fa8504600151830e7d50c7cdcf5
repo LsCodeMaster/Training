@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package math;
+
+/**
+ * @author ilisze
+ *
+ */
+public class subtraction {
+	public int sub(){
+		Addition arith = new Addition();
+		return arith.num1 - arith.num3; 
+	}
+}

@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package polyAbsPackage;
+
+/**
+ * @author ilisze
+ *
+ */
+public class FullTime extends Employee{
+	public FullTime(){
+		super("FullTime");
+	}
+	public void netSalary(){
+		System.out.println("FullTime Employee's Salary");
+	}
+}

@@ -1,0 +1,11 @@
+package polyAbsPackage;
+
+public class Contract {
+	public Contract() {
+		super("Contract");
+	}
+
+	public void netSalary() {
+		System.out.println("Intern Employee's Salary");
+	}
+}

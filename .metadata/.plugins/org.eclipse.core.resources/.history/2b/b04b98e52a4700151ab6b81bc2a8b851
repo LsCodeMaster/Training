@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package enumEx;
+
+/**
+ * @author ilisze
+ *
+ */
+enum Apple {
+	Jonathan, GoldenDel, RedDel, String Winesap = "Winesap tastes sappy", Cortland
+}
+
+public class MainApp {
+
+	public static void main(String[] args){
+		Apple ap;
+		System.out.println("Here are all Apple constants");
+		
+		Apple allApples[] = Apple.values();
+		for(Apple a : allApples){
+			System.out.println(a);
+		}
+		
+		ap = Apple.valueOf("Winesap");
+		System.out.println("ap contains " + ap);
+	}
+}
+
