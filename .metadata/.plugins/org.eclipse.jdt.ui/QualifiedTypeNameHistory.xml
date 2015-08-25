@@ -8,4 +8,5 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.io.EOFException"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>

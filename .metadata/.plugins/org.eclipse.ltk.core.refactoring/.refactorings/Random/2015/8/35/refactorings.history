@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;rand.Practice2&apos; to &apos;FileDemo&apos;&#x0D;&#x0A;- Original project: &apos;Random&apos;&#x0D;&#x0A;- Original element: &apos;rand.Practice2&apos;&#x0D;&#x0A;- Renamed element: &apos;rand.FileDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Practice2&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;rand{Practice2.java[Practice2" matchStrategy="1" name="FileDemo" qualified="false" references="true" similarDeclarations="false" stamp="1440493928312" textual="false" version="1.0"/>
+</session>

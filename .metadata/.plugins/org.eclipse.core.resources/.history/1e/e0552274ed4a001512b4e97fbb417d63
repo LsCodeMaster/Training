@@ -1,0 +1,15 @@
+package randpack;
+
+public class Data{
+	
+}
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Data d1 = new Data();
+		
+	}
+
+}
