@@ -21,10 +21,15 @@ public class EmployeeDetails extends javax.swing.JFrame {
 	ResultSet glResult=  null;
 	Connection glDbConnection = null;
 	PreparedStatement glPStatement = null;
+	
+	Connection dbConnection = null;
+	PreparedStatement pStatement = null;
+	ResultSet result = null;
 	/**
 	 * Creates new form EmployeeDetails
 	 */
 	public EmployeeDetails() {
+		initComponents();
 		btnNextEmployee.setVisible(false);
 		lblEmployeeDisplayed.setVisible(false);
 	}
@@ -221,6 +226,12 @@ public class EmployeeDetails extends javax.swing.JFrame {
 					if (glResult != null) {
 						glResult.close();
 					}
+					if (glDbConnection != null && !glDbConnection.isClosed()) {
+						glDbConnection.close();
+					}
+					if (glPStatement != null) {
+						glPStatement.close();
+					}
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -234,16 +245,8 @@ public class EmployeeDetails extends javax.swing.JFrame {
 
 	private void btnInsertActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnInsertActionPerformed
 
-		Connection dbConnection = null;
-		PreparedStatement pStatement = null;
 		try {
-			// Load / Register the driver
-			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-
-			// Establish a connection
-			dbConnection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Ian",
-					"JINli011492");
+			setConnection();
 
 			// Execute the query
 			pStatement = dbConnection
@@ -263,33 +266,35 @@ public class EmployeeDetails extends javax.swing.JFrame {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			try {
-				if (dbConnection != null && !dbConnection.isClosed()) {
-					dbConnection.close();
-				}
-				if (pStatement != null) {
-					pStatement.close();
-				}
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			closeConnection();
 		}
 
 	}// GEN-LAST:event_btnInsertActionPerformed
 
+	/**
+	 * 
+	 */
+	private void closeConnection() {
+		try {
+			if (dbConnection != null && !dbConnection.isClosed()) {
+				dbConnection.close();
+			}
+			if (pStatement != null) {
+				pStatement.close();
+			}
+			if (result != null) {
+				result.close();
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	private void btnFindIDActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnFindIDActionPerformed
 		// Load / Register the driver
-		Connection dbConnection = null;
-		PreparedStatement pStatement = null;
-		ResultSet result = null;
 		try {
-			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-
-			// Establish a connection
-			dbConnection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Ian",
-					"JINli011492");
+			setConnection();
 
 			// Execute the query
 			pStatement = dbConnection
@@ -311,20 +316,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 			e.printStackTrace();
 		} finally {
 			// need to at least check if DBConnection is null
-			try {
-				if (dbConnection != null && !dbConnection.isClosed()) {
-					dbConnection.close();
-				}
-				if (pStatement != null) {
-					pStatement.close();
-				}
-				if (result != null) {
-					result.close();
-				}
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			closeConnection();
 		}
 
 	}// GEN-LAST:event_btnFindIDActionPerformed
@@ -332,8 +324,6 @@ public class EmployeeDetails extends javax.swing.JFrame {
 	private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnUpdateActionPerformed
 		// TODO add your handling code here:
 
-		Connection dbConnection = null;
-		PreparedStatement pStatement = null;
 		int employeeID = Integer.parseInt(txtEmployeeID.getText());
 		String firstName = txtFirstName.getText();
 		String lastName = txtLastName.getText();
@@ -341,12 +331,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 		System.out.println("  salary: " + salary + "  name: " + firstName + " "
 				+ lastName + "  employeeID " + employeeID);
 		try {
-			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-
-			// Establish a connection
-			dbConnection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Ian",
-					"JINli011492");
+			setConnection();
 
 			// Execute the query
 			pStatement = dbConnection
@@ -373,33 +358,27 @@ public class EmployeeDetails extends javax.swing.JFrame {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			// need to at least check if DBConnection is null
-			try {
-				if (dbConnection != null && !dbConnection.isClosed()) {
-					dbConnection.close();
-				}
-				if (pStatement != null) {
-					pStatement.close();
-				}
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			closeConnection();
 		}
 
 	}// GEN-LAST:event_btnUpdateActionPerformed
 
-	private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnDeleteActionPerformed
-		Connection dbConnection = null;
-		PreparedStatement pStatement = null;
-		try {
-			// Load / Register the driver
-			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
+	/**
+	 * @throws SQLException
+	 */
+	private void setConnection() throws SQLException {
+		DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
 
-			// Establish a connection
-			dbConnection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Ian",
-					"JINli011492");
+		// Establish a connection
+		dbConnection = DriverManager.getConnection(
+				"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Ian",
+				"JINli011492");
+	}
+
+	private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnDeleteActionPerformed
+
+		try {
+			setConnection();
 
 			// Execute the query
 			pStatement = dbConnection
@@ -420,17 +399,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			try {
-				if (dbConnection != null && !dbConnection.isClosed()) {
-					dbConnection.close();
-				}
-				if (pStatement != null) {
-					pStatement.close();
-				}
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			closeConnection();
 		}
 	}// GEN-LAST:event_btnDeleteActionPerformed
 
@@ -440,17 +409,12 @@ public class EmployeeDetails extends javax.swing.JFrame {
 	}// GEN-LAST:event_btnExitActionPerformed
 
 	private void btnFindSalaryActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnFindSalaryActionPerformed
-
+		if(txtSalary.getText().isEmpty())
+			return;
 		// Load / Register the driver
-		btnNextEmployee.setVisible(true);
-		lblEmployeeDisplayed.setVisible(true);
-		try {
-			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
 
-			// Establish a connection
-			glDbConnection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Ian",
-					"JINli011492");
+		try {
+			setConnection();
 
 			// Execute the query
 			glPStatement = glDbConnection
@@ -461,6 +425,8 @@ public class EmployeeDetails extends javax.swing.JFrame {
 			glResult = glPStatement.executeQuery();
 			
 			if (glResult.next()) {
+				btnNextEmployee.setVisible(true);
+				lblEmployeeDisplayed.setVisible(true);
 				txtFirstName.setText(glResult.getString(1));
 				txtLastName.setText(glResult.getString(2));
 				txtEmployeeID.setText(glResult.getString(3));

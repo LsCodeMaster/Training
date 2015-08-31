@@ -1,0 +1,42 @@
+package com.sapient.test.employee;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.sapient.employee.Finance;
+
+public class hrTestCase {
+
+	@Before
+	public void setUp() throws Exception {
+		String fullTime = "F";
+		String intern = "I";
+		String contract = "C";
+		String empty = "";
+		String fullSpellingFullTime = "FullTime";
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testRecruit() {
+		
+	}
+	
+	@Test
+	public void testFullTimeRecruit(){
+		Finance financeTest = new Finance();
+		
+	}
+
+	@Test
+	public void testAvarageSalary() {
+		fail("Not yet implemented");
+	}
+
+}
