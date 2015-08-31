@@ -1,7 +1,0 @@
-package polyPackage;
-
-public class Intern extends Employee{
-	public Intern(){
-		super("Intern");
-	}
-}

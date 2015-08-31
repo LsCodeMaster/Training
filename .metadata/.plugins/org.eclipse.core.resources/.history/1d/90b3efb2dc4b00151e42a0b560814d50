@@ -1,0 +1,31 @@
+package com.sapient.cui.client;
+
+import java.util.ArrayList;
+
+class ArrayListToArray {
+	public static void main(String args[]) {
+		// Create an array list.
+		ArrayList<Integer> al = new ArrayList<Integer>();
+
+		// Add elements to the array list.
+		al.add(1);
+		al.add(2);
+		al.add(3);
+		al.add(4);
+
+		System.out.println("Contents of al: " + al);
+
+//		// Get the array.
+//		ClassName ia[] = new ClassName[al.methodName()];
+//		ia = al.methodName(ia);
+//
+//		int sum = 0;
+//
+//		// Sum the array.
+//		for (int i : ia) {
+//			sum += i;
+//		}
+//
+//		System.out.println("Sum is: " + sum);
+	}
+}

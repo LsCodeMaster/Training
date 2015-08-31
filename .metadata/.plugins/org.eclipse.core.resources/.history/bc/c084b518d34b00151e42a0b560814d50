@@ -1,0 +1,27 @@
+package com.sapient.cui.client;
+
+public class SerDemo {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Sample object1 = new Sample("Hi", -7, 2.7);
+			
+		}
+	}
+
+}
+
+class Sample implements InterfaceName{
+	String s;
+	int i;
+	double d;
+	public Sample(String s, int i, double d) {
+		this.s = s;
+		this.i = i;
+		this.d = d;
+	}
+	public String toString() {
+		return "s= " + s  + "; i= " + i + "; d= " + d;
+	}
+}

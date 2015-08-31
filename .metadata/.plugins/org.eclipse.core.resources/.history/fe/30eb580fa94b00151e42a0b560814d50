@@ -1,0 +1,32 @@
+package rand;
+
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.OutputStream;
+
+public class DataIODemo {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		OutputStream fout = new OutputStream("Test.dat");
+		DataOutputStream out = new DataOutputStream(fout);
+		
+		out.methodName(98.6);
+		out.methodName(1000);
+		out.methodName(true);
+		
+		out.close();
+		
+		<ClassName> fin = new <ClassName>("Test.dat");
+		DataInputStream in = new DataInputStream(fin);
+		
+		double d = in.methodName();
+		int i = in.methodName();
+		boolean b = in.methodName();
+		
+		System.out.println("Here are the values: " + d + " " + i + " " + b);
+		
+		in.close();
+	}
+
+}
