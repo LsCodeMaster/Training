@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Trainee Project</title>
+<link type = "text/css" href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Trainee Project</h1>
+	<div class="centeredBox">
+		<div>
+			<div class="loginType">
+				<p>Login</p>
+			</div>
+			<div class="loginInfo">
+				<form name="login">
+					Username: <input type="text">
+					Password: <input type="password">
+				</form>
+			</div>
+		</div>
+		<div>
+			<div class="loginType">
+				<p>Register</p>
+			</div>
+			<div class="loginInfo">
+				Should be rest
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

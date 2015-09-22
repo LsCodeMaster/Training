@@ -1,2 +1,4 @@
-GitRepositoriesView.GitDirectories=D\:\\Workspace\\Training\\.git;
+GitRepositoriesView.GitDirectories=D\:\\Trainee\\.git;D\:\\Workspace\\GroupProject\\Retail\\.git;D\:\\Workspace\\Training\\.git;
+RepositorySearchDialogDeepSearch=false
+RepositorySearchDialogSearchPath=D\:\\Trainee
 eclipse.preferences.version=1

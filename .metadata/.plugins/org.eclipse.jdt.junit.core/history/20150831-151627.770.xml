@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="MoneyTestCase" project="Junit" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="com.sapient.test.finance.MoneyTestCase" time="0.0">
-    <testcase name="testAddNull" classname="com.sapient.test.finance.MoneyTestCase" time="0.0"/>
-    <testcase name="testAdd" classname="com.sapient.test.finance.MoneyTestCase" time="0.0"/>
-    <testcase name="testMoney" classname="com.sapient.test.finance.MoneyTestCase" time="0.0"/>
-    <testcase name="testAmount" classname="com.sapient.test.finance.MoneyTestCase" time="0.0"/>
-    <testcase name="testCurrency" classname="com.sapient.test.finance.MoneyTestCase" time="0.0"/>
-  </testsuite>
-</testrun>

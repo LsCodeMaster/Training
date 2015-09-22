@@ -1,0 +1,4 @@
+function getData(){
+	var request;
+	request = new XMLHttpRequest();
+}

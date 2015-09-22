@@ -1,0 +1,26 @@
+.centeredBox{
+	margin-top: 20px;
+    margin: auto;
+	border-style: ridge;
+	border-color: aqua;
+	width: 50%;
+	padding: 40 px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.centeredBox div{
+	border-style: dotted;
+	text-align: center;
+}
+.loginType{
+	width: 25%;
+}
+.loginInfo{
+	width:75%;
+}
+h1{
+    text-align: center;
+}
+.border{
+	border-style: dotted;
+}

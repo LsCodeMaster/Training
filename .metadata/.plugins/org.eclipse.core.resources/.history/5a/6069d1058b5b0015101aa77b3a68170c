@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Title</title>
+<link type = "text/css" href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Trainee Project</h1>
+	<div class = "centeredBox">
+		<p>Register</p>
+		<br/><br/><br/>
+		<p>Login</p>
+		<br/>
+	</div>
+</body>
+</html>
