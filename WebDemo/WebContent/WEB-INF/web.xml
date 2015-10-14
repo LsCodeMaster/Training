@@ -102,7 +102,7 @@
   </listener>
   <jsp-config>
     <jsp-property-group>
-      <url-pattern>/jsp/*</url-pattern>
+      <url-pattern>/*</url-pattern>
       <include-prelude>/jsp/Header.jspf</include-prelude>
       <include-coda>/jsp/Footer.jspf</include-coda>
     </jsp-property-group>

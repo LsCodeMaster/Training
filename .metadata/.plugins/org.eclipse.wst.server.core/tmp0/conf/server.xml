@@ -131,7 +131,9 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="D:\Workspace\Training\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Workspace\Training\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebDemo" path="/WebDemo" reloadable="true" source="org.eclipse.jst.jee.server:WebDemo"/><Context docBase="D:\Workspace\Training\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Trainee" path="/Trainee" reloadable="true" source="org.eclipse.jst.jee.server:Trainee"/></Host>
+      <Context docBase="D:\Workspace\Training\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Workspace\Training\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Balloon" path="/Balloon" reloadable="true" source="org.eclipse.jst.jee.server:Balloon"/><Context docBase="D:\Workspace\Training\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EventManagement" path="/EventManagement" reloadable="true" source="org.eclipse.jst.jee.server:EventManagement">
+  <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="8" maxIdle="4" name="jdbc/bankDB" password="password" type="javax.sql.DataSource" url="jdbc:oracle:thin:@ deltahiti31202:1521:xe" username="krishan"/>
+</Context></Host>
     </Engine>
   </Service>
 </Server>

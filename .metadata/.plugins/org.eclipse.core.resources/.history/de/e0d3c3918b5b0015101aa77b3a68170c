@@ -1,7 +1,0 @@
-.centeredBox{
-	border-style: ridge;
-	border-color: aqua;
-	width: 75%;
-	padding: 40 px;
-    margin: auto;
-}
